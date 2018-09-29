@@ -40,6 +40,8 @@ def prepare_image(img):
 def upload_file():
     data = {"success": False}
     if request.method == 'POST':
+        print(request.method)
+        print('posted')
         if request.files.get('file'):
             # read the file
             file = request.files['file']
@@ -79,8 +81,12 @@ def upload_file():
 
         return jsonify(data)
 
-    return render_template("index.html")
+    return render_template("index.html", dict = jsonify(data))
 
+@app.route("/resources")
+def index():
+    """Return the homepage."""
+    return render_template("resources_intakes.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -108,7 +108,7 @@
         
         </script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/sofiamuller93/Adoption_Predictions/sofia/Flask%20App/static/css/style.css">
+        <link rel="stylesheet" href="../static/css/style.css">
 
     </head>
 
@@ -146,12 +146,14 @@
 </li>
 </ul>
 </li>
+<li id="menu-item-158" class="resources expanded menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-158"><a title="Resources" href="http://www.austinhumanesociety.org/resources/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">The Team</a>
+</li>
 <li id="menu-item-158" class="resources expanded menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-158"><a title="Resources" href="http://www.austinhumanesociety.org/resources/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Resources </a>
-<ul class=" dropdown-menu">
-	<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-159  dropdown-submenu "><a title="AHS Intakes" href="http://www.austinhumanesociety.org/resources/local-pet-resources/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">AHS Intakes</a></li>
-	<li id="menu-item-1456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1456  dropdown-submenu "><a title="AHS Outputs" href="http://www.austinhumanesociety.org/resources/trap-cat/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">AHS Outputs</a></li>
-	<li id="menu-item-1327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1327"><a title="Machine Learning" href="http://www.austinhumanesociety.org/about-us/about_faqs/">Machine Learning</a></li>
-</ul>
+    <ul class=" dropdown-menu">
+        <li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-159  dropdown-submenu "><a title="AHS Intakes" href="http://www.austinhumanesociety.org/resources/local-pet-resources/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">AHS Intakes</a></li>
+        <li id="menu-item-1456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1456  dropdown-submenu "><a title="AHS Outputs" href="http://www.austinhumanesociety.org/resources/trap-cat/" class="dropdown-toggle" data-toggle="dropdown" data-target="#">AHS Outputs</a></li>
+        <li id="menu-item-1327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1327"><a title="Machine Learning" href="http://www.austinhumanesociety.org/about-us/about_faqs/">Machine Learning</a></li>
+    </ul>
 </li>
 </ul></div>                            </div>
                     </div> <!-- /navigation -->
@@ -165,17 +167,15 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-left-right text-center adopt-pet-section">
                     <h2>Analyze a pet's chances to get adopted</h2>
-                    <form>
                             <div class="container">
                                 <div class="form-group">
                                     <label for="exampleFormControlFile1">Submit a picture of the pet you're considering to adopt</label>
-                                    <form method=post enctype=multipart/form-data>
+                                    <form method="POST" enctype="multipart/form-data">
                                         <p><input type=file name=file>
-                                        <p><input type=submit value=Upload>
+                                        <p><input id="filter btn" type=submit value=Upload>
                                     </form>
                                 </div>
                             </div>
-                    </form>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-left-right">
                         <h4 class="pet-font adopt-pet-header"><a href="http://www.austinhumanesociety.org/adopt/" style="color: white">ADOPT AN OLD PET</a></h4>
                         <p class="open-hearts-section adopt-pet-text"><a href="http://www.austinhumanesociety.org/adopt/" style="color: #000000" text-decoration= "none">Older pets are less destructive than the younger guys. Their appearance, behavior and health are already established. They can learn new habits and commands.</a></p>
@@ -229,28 +229,25 @@
 </style>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer"><!-- footer/ -->
     <div class="col align-self-center">
-        <h6 class="text-center timing-society home_new_ptext"><b>Data Analysis Final Project</b> <br>
-            Sofia Muller | Stephanie Brannen | Kalisha Hill
-        </h6>
-    </div>
-</div><!-- /footer -->     
-</div> <!-- /page -->
+                <h6 class="text-center timing-society home_new_ptext"><b>Data Analysis Final Project</b> <br>
+                    Stephanie Brannen | Kalisha Hill | Sofia Muller
+                </h6>
+            </div>
+        </div><!-- /footer -->     
+    </div> <!-- /page -->
 </div><!-- /container -->
-<style>
-    .footer{
-        background-color:#fff;
-        padding-bottom: 2%;
-        padding-top: 4%;
-    }
-</style>
-		<script>
-		( function ( body ) {
-			'use strict';
-			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
-		} )( document.body );
-		</script>
-		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done"}};var tribe_system_info = {"sysinfo_optin_nonce":"e7a7f8e769","clipboard_btn_text":"Copy to clipboard","clipboard_copied_text":"System info copied","clipboard_fail_text":"Press \"Cmd + C\" to copy"};/* ]]> */ </script><script type='text/javascript' src='http://www.austinhumanesociety.org/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
-</body>
+        <style>
+            .footer{
+                background-color:#fff;
+                padding-bottom: 2%;
+                padding-top: 4%;
+            }
+        </style>
+        <script>
+            function sendFile() {
+            }
+        </script>
+    </body>
 </html>
         
         
