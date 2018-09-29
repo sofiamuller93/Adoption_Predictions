@@ -113,20 +113,11 @@
     </head>
 
     <body>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T6H92JQ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T6H92JQ');</script>
-<!-- End Google Tag Manager -->
         <div id="container">		
             <div id="page">
                 <div id="header" class="home_header_custom">
                     <div id="top" style="overflow: hidden">
-						<img width="100%" alt="Austin Humane Society banner" src="../resources/assets/ahs-header-logo.png" />
+						<img width="100%" alt="Austin Humane Society banner" src="https://raw.githubusercontent.com/sofiamuller93/Adoption_Predictions/sofia/Flask%20App/resources/assets/ahs-header-logo.png" />
 						<a href="http://www.austinhumanesociety.org" title="Home"><img style="width: 22%; margin-top: -10%; margin-left: 1px" alt="Austin Humane Society banner" src="http://www.austinhumanesociety.org/wp-content/themes/pets/sites/default/files/custom-logo-img-home_1.png" /></a>   
                     </div>
                     <div class="navbar">
@@ -177,8 +168,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <form>
                             <div class="container">
                                 <div class="form-group">
-                                    <label for="exampleFormControlFile1">Send a picture of your pet</label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    <label for="exampleFormControlFile1">Submit a picture of the pet you're considering to adopt</label>
+                                    <form method=post enctype=multipart/form-data>
+                                        <p><input type=file name=file>
+                                        <p><input type=submit value=Upload>
+                                    </form>
                                 </div>
                             </div>
                     </form>
