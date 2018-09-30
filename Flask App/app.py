@@ -81,15 +81,13 @@ def upload_file():
 
         return jsonify(data)
 
-<<<<<<< HEAD
     return render_template("index.html")
     
 
 
 if __name__ == "__main__":
     app.run(debug=True)
-=======
-    return render_template("index.html", dict = jsonify(data))
+
 
 @app.route("/resources")
 def index():
