@@ -1,4 +1,4 @@
-from Belly_Button_Biodiversity.app import db
+from Flask_App.app import db
 
 # db.drop_all()
 db.create_all()
