@@ -1,1 +1,1 @@
-web: gunicorn Flask_App:app --log-file=-
+web: gunicorn Flask_App:app
