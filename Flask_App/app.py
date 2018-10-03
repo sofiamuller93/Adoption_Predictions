@@ -87,12 +87,3 @@ def upload_file():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-@app.route("/resources")
-def index():
-    """Return the homepage."""
-    return render_template("resources_intakes.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
