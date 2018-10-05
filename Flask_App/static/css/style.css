@@ -23,3 +23,15 @@ h2{
     padding-top: 4%;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #004a6f;
+    border-color: #2e6da4;
+}
+
+h3 {
+    font-family: "Rockwell", monospace!important;
+    font-size: 23px!important;
+    color: #004268!important;
+}
+
