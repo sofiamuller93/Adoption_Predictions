@@ -11,12 +11,11 @@ from keras import backend as K
 
 from flask import Flask, request, redirect, url_for, jsonify, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.config['UPLOAD_FOLDER'] = 'Uploads'
 
 model = None
 graph = None
-
 
 def load_model():
     global model
@@ -24,9 +23,7 @@ def load_model():
     model = Xception(weights="imagenet")
     graph = K.get_session().graph
 
-
 load_model()
-
 
 def prepare_image(img):
     img = img_to_array(img)
@@ -34,7 +31,6 @@ def prepare_image(img):
     img = preprocess_input(img)
     # return the processed image
     return img
-
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
@@ -83,7 +79,33 @@ def upload_file():
 
     return render_template("index.html")
     
+@app.route("/index.html")
+def index():
+    return render_template('index.html')
 
+@app.route("/adoption_statistics.html")
+def adoption_statistics():
+    return render_template('adoption_statistics.html')
+
+@app.route("/cat_stats.html")
+def cat_stats():
+    return render_template('cat_stats.html')
+
+@app.route("/dog_stats.html")
+def dog_stats():
+    return render_template('dog_stats.html')
+
+@app.route("/theteam.html")
+def theteam():
+    return render_template('theteam.html')
+
+@app.route("/resources.html")
+def resources():
+    return render_template('resources.html')
+
+@app.route("/machine_learning.html")
+def machine_learning():
+    return render_template('machine_learning.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
