@@ -227,8 +227,10 @@ def unadopted(breed):
     
     animal_analysis = animals.loc[map(lambda x: x[-1], r)]
 
+    animals_analysis.head()
+
     animal_unadopted = animal_analysis[animal_analysis["Outcome Type"] != "Adoption"]
-    animal_unadopted = animal_unadopted[animal_unadopted["Breed"] == breed]
+    # animal_unadopted = animal_unadopted[animal_unadopted["Breed"] == breed]
 
 
     # Create bins in which to place values based upon age in days
