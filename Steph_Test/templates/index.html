@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <title>Upload new File</title>
+    <h1>Upload new File</h1>
+    <form id="uploadForm" method="post" action="/upload_file" enctype="multipart/form-data">
+    <p><input id="file" type=file name="file">
+    <input type=submit value=Upload>
+    <!-- <button onclick="myFunction()">Click me</button> -->
+    </form>
+    <p id="uploadForm"></p>
+    <!-- <div id="id01"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script> 
+    <script>
+        
+	
+        $(function() {
+
+// Function that handles the data returned by Flask
+const messageHandler = (data) => {
+    return '<p>' + data + '</p>';
+};
+
+// Takes over the button press in the form
+$('#upload-button').click(function() {
+    const data = new FormData($('#upload-file')[0]);
+    $.ajax({
+        type: 'POST',
+        url: '/upload',
+        data: data,
+        contentType: false,
+        cache: false,
+        processData: false,
+        success: [function(data) {
+            // Appends the message from flask to the end of the form
+            $('#upload-file').append(messageHandler(data));
+        }]
+    });
+});
+});
+        // })          
+    </script> 
+    
+</body>
+</html>
