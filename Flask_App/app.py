@@ -9,7 +9,7 @@ from keras.applications.xception import (
     Xception, preprocess_input, decode_predictions)
 from keras import backend as K
 
-from flask import Flask, request, redirect, url_for, jsonify
+from flask import Flask, request, redirect, url_for, jsonify, render_template
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'Uploads'
@@ -40,6 +40,8 @@ def prepare_image(img):
 def upload_file():
     data = {"success": False}
     if request.method == 'POST':
+        print(request.method)
+        print('posted')
         if request.files.get('file'):
             # read the file
             file = request.files['file']
@@ -82,6 +84,15 @@ def upload_file():
     return render_template("index.html")
     
 
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+@app.route("/resources")
+def index():
+    """Return the homepage."""
+    return render_template("resources_intakes.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
