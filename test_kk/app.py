@@ -212,7 +212,7 @@ def unadopted(breed):
     animals = pd.read_csv("Animals.csv")
     animal_unadopted = animals[animals["Outcome Type"] != "Adoption"]
     animal_unadopted = animal_unadopted[animal_unadopted["Breed"] == breed]
- 
+
 
     # Create bins in which to place values based upon age in days
     bins = [0, 270, 450, 730, 1460, 2920, 3650, 7000]
