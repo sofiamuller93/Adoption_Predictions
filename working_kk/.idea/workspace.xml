@@ -2,11 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c11e68d8-b49a-4ff5-b166-89ed7266ed08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/AnimalShelters-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jupyter_Notebooks/Wine Data-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/.ipynb_checkpoints/Xception-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/.ipynb_checkpoints/Xception-Copy1-checkpoint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Resources/brain_categorical.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Resources/brain_categorical.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Solved/.ipynb_checkpoints/Ins_Data_Preprocessing-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Solved/.ipynb_checkpoints/Ins_Data_Preprocessing-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Solved/Ins_Data_Preprocessing-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Solved/Ins_Data_Preprocessing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Solved/supplemental/Label_Encoding.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Solved/supplemental/MinMax_Scaler.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Unsolved/Ins_Data_Preprocessing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Unsolved/supplemental/Label_Encoding.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/07-Ins_Data_Preprocessing/Unsolved/supplemental/MinMax_Scaler.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/08-Evr_Flask_Xception/Images/hot_dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/08-Evr_Flask_Xception/Images/hotdog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/08-Evr_Flask_Xception/Solved/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/08-Evr_Flask_Xception/Solved/uploads/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/cats.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/cricket.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/kitten.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/ohheystella.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/patton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/pup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/stella.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Images/vanna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Xception-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/Xception-Copy1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Steph_Test/templates/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/.idea/test_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/cats.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/cricket.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/kitten.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/ohheystella.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/patton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/pitbull.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/pitbull2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/pup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/stella.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/Images/vanna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_app/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/test_kk.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animals.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uploads/hot_dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uploads/pup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_App/AnimalShelters.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask_App/AnimalShelters.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,14 +109,32 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-773895988">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="269" lean-forward="true" selection-start-line="269" selection-end-line="269" />
+            <state relative-caret-position="3780">
+              <caret line="269" selection-start-line="269" selection-end-line="269" />
               <folding>
                 <element signature="e#3732#3741#0" expanded="true" />
               </folding>
@@ -62,11 +142,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/results.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="345">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="689" selection-start-column="689" selection-end-column="689" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#noscript#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#object#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +180,7 @@
       <list>
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/results.html" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -106,13 +201,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="test_kk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test_kk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test_kk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test_kk" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="working_kk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="working_kk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,14 +268,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="23" width="1400" height="787" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" weight="0.3294964" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3294964" />
@@ -193,6 +280,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3294964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -204,8 +295,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="269" lean-forward="true" selection-start-line="269" selection-end-line="269" />
+        <state relative-caret-position="3780">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
           <folding>
             <element signature="e#3732#3741#0" expanded="true" />
           </folding>
@@ -214,8 +305,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="345">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="689" selection-start-column="689" selection-end-column="689" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#noscript#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#object#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
