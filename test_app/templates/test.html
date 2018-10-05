@@ -1,0 +1,118 @@
+	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!-- <script src="../static/js/upload.js"></script> -->
+
+    <title>Upload Files</title>
+
+</head>
+
+<body>
+    <h1>Upload files:</h1>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="file">Select a file</label>
+        <input id="file" name="file" type="file">
+        <button id="upload-button" type="button">Upload</button>
+    </form>
+
+    <div id="plotAge"></div>
+    <div id="plotColor"></div>
+
+    {% for pet in data %}
+        <h2 id="breed{{pet.id}}">{{pet.breed}}</h2>
+        <div id="plot{{pet.id}}"></div>
+        <div id=plotgender{{pet.id}}></div>
+    {% endfor %}
+</body>
+<script>
+$(function() {
+    // Function that handles the data returned by Flask
+    const messageHandler = (data) => {
+        return '<p>' + data + '</p>';
+    };
+
+    function buildPlot(json_data, id) {
+        var url = `/data/${json_data}`;
+        // console.log(url);
+        d3.json(url, function (data) {
+
+            console.log(data);
+            // var trace1 = {
+            //     x: data.x,
+            //     y: data.y,
+            //     type: "bar"
+            // };
+
+            // var data = [trace1];
+
+            // var layout = {
+            //     title: data.title
+            // };
+
+            // Plotly.newPlot("plot"+1, data, layout);
+
+        });
+    }
+
+    function buildgenderPlot(json_data, id) {
+        d3.json('/gender/' + json_data, function (data) {
+            console.log(data);
+            var trace1 = {
+                x: data.x,
+                y: data.y,
+                type: "bar"
+            };
+
+
+            var data = [trace1];
+
+            var layout = {
+                title: data.title
+            };
+
+            Plotly.newPlot("plotgender", data, layout);
+        });
+    }
+
+    // Takes over the button press in the form
+    $('#upload-button').click(function() {
+        const data = new FormData($('#upload-file')[0]);
+        $.ajax({
+            type: 'POST',
+            url: '/upload_file',
+            data: data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: [function(data) {
+                // Appends the message from flask to the end of the form
+                // $('#upload-file').append(messageHandler(data));
+                // console.log(data)
+                json_data = data
+                // console.log(json_data)
+                console.log("1 .. 2.. 3..")
+                // var breed1 = d3.select("#breed1").text()
+                buildPlot(json_data, 1)
+                // var breed2 = d3.select("#breed2").text()
+                // buildPlot(json_data, 1)
+
+                buildgenderPlot(json_data, 1)
+            }]
+        });
+    });
+})
+</script>
+
+</body>
+</html>
