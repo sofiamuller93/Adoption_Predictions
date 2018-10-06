@@ -50,8 +50,8 @@ def upload_file():
     data = {"success": False}
     if request.method == 'POST':
         # print(request.method)
-        print(request)
-        print('posted')
+        # print(request)
+        # print('posted')
 
         if request.files.get('file'):
             # read the file
@@ -62,7 +62,7 @@ def upload_file():
 
             # create a path to the uploads folder
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-            print('HELP!')
+            # print('HELP!')
             file.save(filepath)
 
             # Load the saved image using Keras and resize it to the Xception
@@ -80,13 +80,13 @@ def upload_file():
                 preds = model.predict(image)
                 results = decode_predictions(preds)
                 data["predictions"] = []
-                print(decode_predictions(preds, top=3)[0])
+                # print(decode_predictions(preds, top=3)[0])
                 # loop over the results and add them to the list of
                 # returned predictions
                 for (imagenetID, label, prob) in results[0]:
                     r = {"label": label, "probability": float(prob)}
                     data["predictions"].append(r)
-                print(data)
+                # print(data)
                 # indicate that the request was a success
                 data["success"] = True
                 predictions = [
@@ -102,7 +102,7 @@ def upload_file():
 @app.route("/data/<breed>")
 def unadopted(breed):
 
-    print(breed)
+    # print(breed)
     breed.replace("%20", " ")
     animals = pd.read_csv("Animals.csv")
 
@@ -116,7 +116,7 @@ def unadopted(breed):
 
     animal_unadopted = animal_analysis[animal_analysis["Outcome Type"] != "Adoption"]
 
-    pprint(animal_unadopted)
+    # pprint(animal_unadopted)
 
     # animal_unadopted = animal_unadopted[animal_unadopted["Breed"] == breed]
 
@@ -130,7 +130,7 @@ def unadopted(breed):
     age_series = pd.cut(animal_unadopted["Intake Age (days)"], bins, labels=labels, include_lowest=True)
     animal_unadopted["age_range"] = age_series
     animal_unadopted.dropna()
-    print("did i make here")
+    # print("did i make here")
 
     age_df = animal_unadopted.groupby("age_range").count()["Breed"]
     labels = age_df.index.tolist()
