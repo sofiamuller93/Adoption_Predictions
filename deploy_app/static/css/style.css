@@ -1,0 +1,37 @@
+h2{
+    color: #e22b32;
+    font-family: "Rockwell",monospace;
+    font-size: 33px;
+    line-height: [h1-line-height];
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.team h3 {
+    font-family: Rockwell;
+    color: #EB3A46;
+    font-size: 20px;
+}
+
+.navbar-inner{
+    margin-bottom: 0px!important;
+}
+
+.footer{
+    background-color:#fff;
+    padding-bottom: 2%;
+    padding-top: 4%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #004a6f;
+    border-color: #2e6da4;
+}
+
+h3 {
+    font-family: "Rockwell", monospace!important;
+    font-size: 23px!important;
+    color: #004268!important;
+}
+
