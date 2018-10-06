@@ -144,7 +144,7 @@ def gender(breed):
     animals = pd.read_csv("Animals.csv")
 
     r = process.extractBests(breed.replace('%20', ' '), animals.Breed.to_dict(), scorer=partial_ratio, score_cutoff=70,
-                             limit=1000000000)
+                            limit=1000000000)
 
     animal_analysis = animals.loc[map(lambda x: x[-1], r)]
 
